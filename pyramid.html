@@ -1,22 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <style>
-        #pyramid {
-            font-family: "Courier New", monospace;
-            line-height: 1.5;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="pyramid.css">
 </head>
 <body>
-<h1>Mario 2</h1>
-<h3>Behold this wonderful pyramid:</h3>
+<h1>Pyramid Slide</h1>
 
-Height: <input type="text" id="input" value="">
-<button onclick="drawPyramid()"> Draw the Pyramid </button>
+<div class="input">
+    <label for="height">How high?</label>
+    <input type="range" id="height" name="height" min="1" max="20" onchange="drawPyramid()">
+    <output id="display"> 10 </output>
+</div>
 
-<div id="pyramid">
-    <p> <script src="mario.js"></script> </p>
+<div id="pyramid" class="pyramid">
+    <script src="pyramid.js"></script>
 </div>
 
 </body>

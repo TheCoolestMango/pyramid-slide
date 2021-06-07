@@ -1,0 +1,27 @@
+.pyramid {
+    margin: auto;
+    display: grid;
+    align-content: start;
+    justify-content: center;
+}
+h1 {
+    font-family: "Courier New", monospace;
+    text-align: center;
+    background-color: #CDB4DB;
+    color: #F8EDEB;
+    height: 100px;
+    margin: auto;
+    width: 50%;
+    line-height: 100px;
+}
+.input {
+    font-family: "Courier New", monospace;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+body {
+    border: #CDB4DB;
+    background-color: #F8EDEB;
+    align-content: center;
+}

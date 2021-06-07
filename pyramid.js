@@ -3,16 +3,18 @@ const block = {
     width: "25px",
     height: "25px",
     margin: "3px",
-    backgroundColor: "brown",
+    backgroundColor: "#CDB4DB",
     display: "inline-block",
+    alignContent: "center",
 };
 
 const blank = {
     width: "25px",
     height: "25px",
-    backgroundColor: "white",
+    backgroundColor: "#F8EDEB",
     margin: "3px",
     display: "inline-block",
+    alignContent: "center",
 };
 
 function styledNode(type, style) {
@@ -33,8 +35,14 @@ function makeRow(rowNum, height) {
     return row;
 }
 
+function clear(elementID) {
+    document.getElementById(elementID).innerHTML = "";
+}
+
  function drawPyramid() {
-     const height = document.getElementById("input").value;
+     clear("pyramid");
+     const height = document.getElementById("height").value;
+     document.getElementById("display").value = height;
      let pyramid = document.getElementById("pyramid");
      let divElem = document.createElement("div");
      for (var i = 0; i<height; i++) {
