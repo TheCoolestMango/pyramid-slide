@@ -1,3 +1,3 @@
 # Pyramid Slide
 A JavaScript/CSS task to display a staircase-like pyramid, its height is determined by the top slider
-![pyr](pyr.png)
+![pyr](img/pyr.png)
